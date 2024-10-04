@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "Game"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "ReleaseDate": {
+      "type": "date"
+    },
+    "EarlyAccessDate": {
+      "type": "date"
+    },
+    "ReleaseType": {
+      "type": "enumeration",
+      "enum": [
+        "Speculative",
+        "Unreleased",
+        "Early Access",
+        "Released",
+        "Abandoned"
+      ]
+    },
+    "IconSmallBitmap": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "IconVector": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "GameCover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "GameBox": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ShortDescription": {
+      "type": "text"
+    }
+  }
+}
